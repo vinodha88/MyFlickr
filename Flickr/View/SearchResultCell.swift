@@ -17,7 +17,7 @@ class SearchResultCell : UITableViewCell {
         tile.text = model.title
         ImageLoader.image(for: model.photoUrl) { (image) in
             DispatchQueue.main.async(execute: { () -> Void in
-                self.resultImage.image = images
+                self.resultImage.image = image
             })
         }
     }
